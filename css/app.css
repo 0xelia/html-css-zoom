@@ -21,12 +21,46 @@ img {
 
 main {
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    background-color: rgb(24, 24, 24);
 }
 
 .meetings-container {
     flex-grow: 1;
     height: calc(100vh - 80px);
+    position: relative;
 }
+
+
+/* MEETINGS VIDEO */
+
+
+/* Badges */
+.badge {
+    color: white;
+    background-color: rgba(211, 211, 211, 0.6);
+    padding: 8px 5px;
+    font-size: 12px;
+}
+
+.badge-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 10px;
+}
+
+.badge-container > .badge {
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.badge-container :last-child i{
+    transform: rotate(45deg);
+}
+/* badges end */
+
+
+/* TOOLBAR */
 
 .toolbar {
     height: 80px;
@@ -58,8 +92,13 @@ main {
 .button {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.green {
+    color: rgb(44, 182, 44);
 }
 
 .end-meeting-button {
